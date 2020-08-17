@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BestHouse2Buy | Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+</head>
+<body class="contact">
+    
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 ><a href="index.html" class="logo_naslov">BestHouse2Buy</a></h1>
+            </div>
+            <nav>
+             <ul>
+                 <li><a href="index.html">Home</a></li>   
+                 <li ><a href="about.html">About Us</a></li>  
+                 <li class="current"><a href="contact.html">Contact Us</a></li>
+                 <li><a href="offers.html">Offers</a></li>
+                 <li>|</li>
+                 <li><a href="login.html">Login/Register</a></li>
+             </ul>
+            </nav>
+       </header> 
+<div class="wrapper">
+    <form class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" placeholder="Name" >
+          <input id="contact_email" type="email" class="input" placeholder="Email Address" >
+          <input type="text" class="input" placeholder="Phone" >
+          <input type="text" class="input" placeholder="Subject" >
+        </div>
+        <div class="msg" id="contact_message" >
+          <textarea placeholder="Message"  ></textarea>
+          <div type="submit" class="btn" onclick="sendContactForm()">send</div>
+        </div>
+    </form>
+</div>
+
+ 
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

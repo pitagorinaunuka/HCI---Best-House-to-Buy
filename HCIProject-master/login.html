@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web design">
+    <meta name="author" content="MI">
+    <title>HCI Project About</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">HCI</span> Project</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="current"><a href="login.html">Login/register</a></li>
+
+
+                </ul>
+            </nav>
+    </header>
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login"class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                 <button type="submit" class="submit-btn">Log in</button>
+
+            </form>
+            <form id="register"class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                 <button type="submit" class="submit-btn">Register</button>
+
+            </form>
+        </div>
+    </div>
+
+     <script>
+     var x = document.getElementById("login");
+     var y = document.getElementById("register");
+     var z = document.getElementById("btn");
+     function register() {
+         x.style.left = "-400px";
+         y.style.left = "50px";
+         z.style.left = "110px";
+     }
+       function login() {
+         x.style.left = "50px";
+         y.style.left = "450px";
+         z.style.left = "0";
+     }
+
+
+
+     
+          
+     </script>
+    <footer>
+        <p>HCI Project, Copyright &copy; 2020</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web design">
+    <meta name="author" content="MI">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+    
+</head>
+
+<body class="login">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 ><a href="index.html" class="logo_naslov">BestHouse2Buy</a></h1>
+            </div>
+            <nav>
+                <ul>
+             <li><a href="index.html">Home</a></li>   
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+             <li><a href="offers.html">Offers</a></li>
+             <li>|</li>
+             <li  class="current"><a href="login.html"  id="loginwindow">Login/Register</a></li>
+         </ul>
+            </nav>
+    </header>
+    
+
+
+
+    <div class="hero">
+        <div class="form-box" id="form_id">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login"class="input-group" name="myForm" onsubmit="return validateLoginForm()">
+                <input id="username" type="text" name="username_login" class="input-field" placeholder="Username" >
+                <input id="password"type="password" name="password_login"class="input-field" placeholder="Password" >
+                <button type="submit" class="submit-btn" onClick="loginUser() ">LOG IN</button>
+            </form>
+            <form id="register"class="input-group"  name="myForm">
+                <input id="newUser" name="username_register"type="text" class="input-field" placeholder="Username" >
+                <input id="newPassword" type="password" name="password_register" class="input-field" placeholder="Password">
+                <button type="submit" class="submit-btn" onclick="registerUser()">REGISTER</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+    
+
+</body>
+
+</html>
